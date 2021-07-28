@@ -6,8 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profit or Loss</title>
     <link rel="stylesheet" href="style.css" />
+    
   </head>
   <body>
+    <div class="container">
+        <div class="stock">
+            <div class="form-box">
+                <h2>Did you make a profit or a loss?</h2>
+
+                <form action="" id="myform">
+                    <div class="prices">
+                        <label>
+                        <input type="number" id="stock-price" placeholder="Enter your stock purchase price?" autocomplete="off">Purchased Price</input><br></label>
+                        <label>
+                        <input type="number" id="quantity" placeholder="Enter your stock quantity?" autocomplete="off"> Stock Quantity</input><br></label>
+                        <label>
+                        <input type="number" id="current-price" placeholder="Enter your current stock price?" autocomplete="off">Current Stock Price</input><br></label>
+                        </div>
+                    <div class="btn">
+                        <button class="btn-check" type="submit">Check</button>
+                    </div>
+                    <div class="output">
+                    </div>
+                </div>
+                <div class="background">
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
