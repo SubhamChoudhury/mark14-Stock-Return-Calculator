@@ -58,8 +58,9 @@ label {
   padding-left: 50px;
 }
 input {
-  height: 30px;
+  height: 40px;
   border: none;
+  font-size: 15px;
   padding: 2px;
   background-color: transparent;
   width: 50%;
