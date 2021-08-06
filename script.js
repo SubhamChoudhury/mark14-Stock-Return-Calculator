@@ -46,7 +46,7 @@ form.addEventListener("submit", (e) => {
         stockQuantity
       ).toFixed(2);
       //profit in percentage
-      const profitPer = (
+      const profitPercent = (
         ((currentPrice - purchasePrice) * 100) /
         purchasePrice
       ).toFixed(2);
