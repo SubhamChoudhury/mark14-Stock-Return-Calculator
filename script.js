@@ -39,7 +39,21 @@ form.addEventListener("submit", (e) => {
                     </div>
             `;
       document.querySelector(".output").innerHTML = losses;
-    } else {
+    } 
+    else if(purchasePrice == currentPrice) {
+      //no loss
+      var losses = "";
+      losses = `
+
+                    <div class="loss-info">
+
+                        <p> You are safe!! No profit, no loss.</p>
+                    </div>  
+            `;
+
+      document.querySelector(".output").innerHTML = losses;
+    }
+    else {
       //total profit in amount
       const totalProfit = (
         (currentPrice - purchasePrice) *
