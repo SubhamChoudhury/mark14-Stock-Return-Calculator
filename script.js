@@ -4,7 +4,6 @@ const form = document.querySelector("#myform");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  // collecting prices
 
   let purchasePrice = Number(priceInputs[0].value);
   let stockQuantity = Number(priceInputs[1].value);
@@ -12,12 +11,11 @@ form.addEventListener("submit", (e) => {
 
   if (purchasePrice > 0 && stockQuantity > 0 && currentPrice > 0) {
     if (purchasePrice > currentPrice) {
-      //total loss in amount
       const totalLoss = (
         (purchasePrice - currentPrice) *
         stockQuantity
       ).toFixed(2);
-      //loss in percentage
+     
       const lossPercent = (
         ((purchasePrice - currentPrice) * 100) /
         purchasePrice
@@ -40,7 +38,7 @@ form.addEventListener("submit", (e) => {
       document.querySelector(".output").innerHTML = losses;
     } 
     else if(purchasePrice == currentPrice) {
-      //no loss
+      
       var losses = "";
       losses = `
 
@@ -53,7 +51,7 @@ form.addEventListener("submit", (e) => {
       document.querySelector(".output").innerHTML = losses;
     }
     else {
-      //total profit in amount
+      
       const totalProfit = (
         (currentPrice - purchasePrice) *
         stockQuantity
