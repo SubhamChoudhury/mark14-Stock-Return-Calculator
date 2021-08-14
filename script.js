@@ -1,6 +1,5 @@
 const priceInputs = document.querySelectorAll("input");
 const form = document.querySelector("#myform");
-console.log(form);
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -68,6 +67,13 @@ form.addEventListener("submit", (e) => {
       if (profitPercent > 50) {
         document.querySelector(".background").style.backgroundImage =
           "url('./Images/profit.gif')";
+        document.querySelector(".background").style.backgroundSize = "cover";
+        document.querySelector(".background").style.backgroundPosition =
+          "center";
+      }
+      else{
+        document.querySelector(".background").style.backgroundImage =
+        "url('./Images/neutral.jpg')";
         document.querySelector(".background").style.backgroundSize = "cover";
         document.querySelector(".background").style.backgroundPosition =
           "center";
