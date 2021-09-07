@@ -20,7 +20,7 @@ form.addEventListener("submit", (e) => {
         ((purchasePrice - currentPrice) * 100) /
         purchasePrice
       ).toFixed(2);
-      if (lossPercent > 50) {
+      if (lossPercent >= 50) {
         document.querySelector(".background").style.backgroundImage =
           "url('/Images/loss.webp')";
         document.querySelector(".background").style.backgroundSize = "cover";
@@ -62,7 +62,7 @@ form.addEventListener("submit", (e) => {
         purchasePrice
       ).toFixed(2);
 
-      if (profitPercent > 50) {
+      if (profitPercent >= 50) {
         document.querySelector(".background").style.backgroundImage =
           "url('./Images/profit.gif')";
         document.querySelector(".background").style.backgroundSize = "cover";
